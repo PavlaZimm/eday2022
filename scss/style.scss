@@ -1,0 +1,370 @@
+@use 'base';
+@use 'programpage';
+@use 'aktualitypage';
+@use 'galeriepage';
+@use 'kontaktpage';
+@use 'registracepage';
+
+-------------------------------------
+
+*, :after, :before { box-sizing: border-box; }  
+
+body{
+    font-family: base.$fontbase;
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+h1{
+    font-size: 30px;
+    margin:0;
+}
+
+.models{
+    font-weight: 800;
+    font-size: 40px;
+    text-shadow: 1px 1px 10px #ffffff;
+}
+
+.navbar .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    font-weight: 500;
+}
+
+.navbar{
+    background-color: base.$backgroundwhite;
+    font-weight: bold;
+    color: base.$blackfont;
+    margin-left: auto; 
+	margin-right: auto;
+    padding-top: 10px;
+}
+
+.primary-nav{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.primary-nav a{
+    text-decoration: none;
+    color: base.$hover;
+}
+
+.primary-nav li a:hover {
+    color: base.$hover;
+}
+
+
+.second-nav a{
+    text-decoration: none;
+    color: base.$backgroundwhite;
+}
+
+
+.hero-button,
+.feature-section-cta,
+.cta{
+    color: base.$backgroundwhite;
+    text-align: center;
+    list-style: none;
+    background-color: base.$primaryred;
+    color: base.$backgroundwhite;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 20px 20px 20px 20px;
+    max-width: 300px;
+
+}
+
+.cta:hover,
+.cta:active,
+.cta:focus {
+    background-color: base.$hover;
+}
+
+li{
+    margin-right: base.$spacer;
+}
+
+.hero{
+    background-image: url(images/bckhero.jpg);
+}
+
+
+.mustang{
+    width: 100%;
+}
+
+.hero-container{
+    margin-left: auto; 
+	margin-right: auto;
+}
+
+.section-text{
+    color: base.$backgroundwhite;
+    margin: 0;
+}
+
+.section-buttons{
+    max-width: 1200px;
+    margin-left: auto; 
+	margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+    color: base.$backgroundwhite
+}
+
+.cta-third,
+.cta-first,
+.cta-second, a{
+    color: base.$backgroundwhite;
+    list-style: none;
+    text-decoration: none;
+}
+
+.features-section{          
+	border-radius: 10px;
+	text-align: center;
+	margin-bottom: 10px;
+	padding: 20px;
+    flex: 0 0 50%;
+
+}
+
+.features-container{
+    background-color: base.$background;
+    border-radius: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-left: auto; 
+	margin-right: auto;
+}
+
+.features-foto{
+    border-radius: 20px 20px 0 0;
+    max-width: 100%;
+}
+
+.hero-left,
+.features-section-left2{
+    padding: 30px;
+}
+
+.hero-button,
+.feature-section-cta{
+    color: base.$backgroundwhite;
+    text-align: center;
+    background-color: base.$primaryred;
+    border-radius: 20px 20px 20px 20px;
+    color:base.$backgroundwhite;
+    width: 200px;
+    padding: 6px;
+    margin-left: auto; 
+	margin-right: auto;   
+   }
+
+   .features-section2{          
+	border-radius: 10px;
+	text-align: center;
+	margin-bottom: 10px;
+	padding: 20px;
+}
+
+.features-section2-container{
+    background-color: base.$background;
+    border-radius: 20px;
+    display:flex;
+    flex-direction: column;
+    margin-left: auto; 
+	margin-right: auto;   
+    align-content: stretch;
+
+    }
+
+.section2-photo{
+    flex: 0 0 50%;
+
+}
+
+.photo2{
+    border-radius: 20px 20px 0 0;
+    max-width: 100%;
+}
+
+footer{
+    background-color: base.$footer;
+    color: base.$backgroundwhite;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin-left: auto; 
+	margin-right: auto;
+    padding: 5%;
+}
+
+hr{
+    border: 1px solid base.$background;
+    width: 200px;
+    text-align: center;
+}
+
+.copy{
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (min-width: 540px){
+    H1{
+        font-size: 45px;
+        margin: 0;
+    }
+
+    li{
+        margin-right: 15px;
+    }
+    
+    .navbar{
+        background-color: white;
+        max-width: 1200px;
+        padding: 1em;
+        font-weight: bold;
+        color: black;
+        margin-left: auto; 
+        margin-right: auto;
+    }
+    
+    .navbar .container {
+        display: flex;
+        justify-content: space-between;
+      }
+      
+ 
+      
+    .primary-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        gap: 15px;
+        font-size: 20px;
+    }
+    .primary-nav a{
+        text-decoration: none;
+        color: #202022;
+    }
+   
+    
+    .second-nav a{
+        text-decoration: none;
+        color: white;
+    }
+ 
+    
+    .hero{
+        background-color: #e2e1df;
+        padding: 50px;    
+    }
+    
+    .hero-container{
+        flex-direction: row-reverse;
+        max-width: 1200px;
+        margin-left: auto; 
+        margin-right: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+   
+    .buttons{
+        background-color: #222e47;
+    }
+    
+    .section-buttons{
+        max-width: 1200px;
+        margin-left: auto; 
+        margin-right: auto;
+        padding: 30px;
+    }   
+            
+    .features-container{
+        background-color: #e2e1df ;
+        max-width: 1000px;
+        margin-left: auto; 
+        margin-right: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row-reverse;
+       
+    }
+    
+    .features-foto{
+        border-radius: 0 20px 20px 0;
+    }
+    .section2-photo{
+        flex: 0 0 50%;
+    }
+    
+  
+    .features-section2-container{
+        background-color: #e2e1df ;
+        border-radius: 20px;
+        max-width: 1000px;
+        margin-left: auto; 
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .photo2{
+        border-radius: 20px 0 0 20px;
+        max-width: 100%;
+    }
+         
+    footer{
+        background-color: #353330;
+        color: white;
+    }
+    
+    .footer-container {
+        max-width: 1200px;
+        margin-left: auto; 
+        margin-right: auto;
+        padding: 5%;
+    }
+    
+    hr{
+        border: 1px solid #e2e1df;
+        width: 200px;
+        text-align: center;
+    }
+    
+    .copy{
+        text-align: center;
+        padding: 20px;
+        font-size: 12px;
+    }
+
+    .second-nav{
+        display: none;
+    }
+
+
+
+
+
+}

@@ -1,0 +1,23 @@
+{
+  "name": "2022eday-main",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PavlaZimm/Finalproject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PavlaZimm/Finalproject/issues"
+  },
+  "homepage": "https://github.com/PavlaZimm/Finalproject#readme",
+  "description": "",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2"
+  }
+}

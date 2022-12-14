@@ -1,0 +1,73 @@
+@use 'base';
+
+.zahlavi-kontakt{
+    background-attachment: fixed;
+    background-color: base.$footer;
+    color: base.$backgroundwhite;
+    text-align: center;
+}
+
+.aktuality
+{
+    max-width: 1200px;
+    margin-left: auto; 
+	margin-right: auto;
+    padding: 30px;
+}
+
+.content-contact{
+    margin: 30px;
+}
+
+.content-kontakt{
+    max-width: 1200px;
+    margin-left: auto; 
+	margin-right: auto; 
+    background-color: base.$background;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+label, textarea{
+    display: block;
+    margin-top: 10px;
+}
+
+
+form{
+    width: 100%;
+    max-width: 90%;
+    margin-left: auto; 
+	margin-right: auto;
+}
+
+.form{
+    text-align: center;
+}
+
+.form-field input, textarea{
+    width:100%;
+    border: black;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.button{
+    padding: 10px 20px;
+    border: 0;
+    margin-top: 20px;
+    border-radius: 4px;
+    background-color: base.$primaryred;
+    color: base.$backgroundwhite;
+}
+
+
+.button:hover{
+    background-color: base.$hover;
+}
+
+
+@media screen and (min-width: 540px){
+
+}

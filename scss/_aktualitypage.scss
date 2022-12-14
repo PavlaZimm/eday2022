@@ -1,0 +1,33 @@
+@use 'base';
+
+
+
+.content{
+    background-color: base.$background;
+    margin-left: auto; 
+	margin-right: auto;   
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 1200px
+}
+
+.program-page{
+    margin: 20px;
+}
+
+.zahlavi-aktuality{
+    background-attachment: fixed;
+    background-color: base.$footer;
+    color: base.$backgroundwhite;
+    text-align: center;
+}
+
+.aktuality
+{
+    max-width: 1200px;
+    margin-left: auto; 
+	margin-right: auto;
+    padding: 30px;
+}
+
+    
